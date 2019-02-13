@@ -1,0 +1,97 @@
+p,
+label {
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+.colorwrapper {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+.colorBox {
+  height: 10vw;
+  width: 10vw;
+  border: solid 2px #000;
+  margin-bottom: 2vw;
+}
+
+#box_0 {
+  background-color: blue;
+}
+#box_1 {
+  background-color: red;
+}
+#box_2 {
+  background-color: green;
+}
+#box_3 {
+  background-color: yellow;
+}
+#box_4 {
+  background-color: purple;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 0.5vw 1vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+#colorwheel {
+  border: none;
+  color: white;
+  padding: 0.5vw 1vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#colorwheel {
+  margin: 1em;
+  animation: 1s infinite click;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
